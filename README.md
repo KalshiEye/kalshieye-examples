@@ -19,7 +19,7 @@ python 01_quickstart.py
 | [`01_quickstart.py`](01_quickstart.py) | The day's busiest NFL markets: trades, contracts, average price, first and last price. |
 | [`02_spread_and_depth.py`](02_spread_and_depth.py) | Time-weighted spread and size at the best bid and ask, hour by hour, for the 15-minute bitcoin markets. |
 | [`03_rebuild_order_book.py`](03_rebuild_order_book.py) | Rebuilds the full order book of the Bills vs Rams market from `book_l2` during the game, and checks it against the `bbo` file. |
-| [`04_backtest.py`](04_backtest.py) | Buys YES at the ask five minutes before close in every 15-minute crypto market, with Kalshi's fee and recorder gaps left out. |
+| [`04_backtest.py`](04_backtest.py) | Buys YES at the ask five minutes before close in every 15-minute crypto market, paying Kalshi's taker fee and skipping hours with recorder gaps. |
 | [`05_calibration.py`](05_calibration.py) | Whether contracts priced at p win about p of the time, as a table and a chart. |
 
 ![Calibration of the sample's settled markets](calibration.png)
@@ -31,6 +31,8 @@ Point `KALSHIEYE_DATA` at a folder you downloaded from Kalshi Eye (the folder na
 ```bash
 export KALSHIEYE_DATA=/path/to/kalshieye-data
 ```
+
+Reading from Hugging Face without an account works, but heavy use can hit Hugging Face's anonymous rate limit. Setting `HF_TOKEN` to a (free) Hugging Face token lifts it.
 
 ## Reading the data
 
