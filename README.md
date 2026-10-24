@@ -8,7 +8,7 @@ Every script reads the free one-day sample on Hugging Face in place:
 ## Run them
 
 ```bash
-git clone https://github.com/kalshieye/kalshieye-examples
+git clone https://github.com/KalshiEye/kalshieye-examples
 cd kalshieye-examples
 pip install -r requirements.txt
 python 01_quickstart.py
