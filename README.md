@@ -1,6 +1,6 @@
 # Kalshi Eye examples
 
-Runnable examples for working with Kalshi order book data from [Kalshi Eye](https://kalshieye.com/).
+Runnable examples for working with Kalshi order book data from [Kalshi Eye](https://kalshieye.com/?utm_source=github&utm_medium=readme&utm_campaign=kalshieye-examples).
 
 Every script reads the free one-day sample on Hugging Face in place:
 [KalshiEye/kalshi-order-book-sample](https://huggingface.co/datasets/KalshiEye/kalshi-order-book-sample). That sample is October 13, 2026 for seven Kalshi series, with every order book change, trade and settlement. You don't need an account, an API key, or to download anything first. The files and columns are the same as the full archive, so the code runs unchanged on data you download.
@@ -40,10 +40,10 @@ Reading from Hugging Face without an account works, but heavy use can hit Huggin
 - Kalshi's books are bids only. A NO bid at p is an offer to sell YES at 1 − p. `bbo`, `bbo_1m` and `book_snap_1s` show asks in YES terms already, while `book_l2` has the raw YES and NO bids (see `Book` in [`kalshieye_sample.py`](kalshieye_sample.py)).
 - `incidents` lists every hour the recorder did not see in full. The examples leave those hours out, and so should any test of a trading rule.
 
-Every column is described in the [data dictionary](https://kalshieye.com/docs/datasets/). [How to backtest Kalshi markets](https://kalshieye.com/guides/backtest-kalshi-markets/) walks through example 4 step by step, and [Kalshi vs Polymarket data](https://kalshieye.com/guides/kalshi-vs-polymarket-data/) covers what changes on Polymarket.
+Every column is described in the [data dictionary](https://kalshieye.com/docs/datasets/?utm_source=github&utm_medium=readme&utm_campaign=kalshieye-examples). [How to backtest Kalshi markets](https://kalshieye.com/guides/backtest-kalshi-markets/?utm_source=github&utm_medium=readme&utm_campaign=kalshieye-examples) walks through example 4 step by step, and [Kalshi vs Polymarket data](https://kalshieye.com/guides/kalshi-vs-polymarket-data/?utm_source=github&utm_medium=readme&utm_campaign=kalshieye-examples) covers what changes on Polymarket.
 
 ## License
 
-The code is MIT licensed. The sample data is CC BY-NC 4.0; see the [dataset card](https://huggingface.co/datasets/KalshiEye/kalshi-order-book-sample). The full archive, recorded since October 12, 2026, is described at [kalshieye.com/data/kalshi](https://kalshieye.com/data/kalshi/).
+The code is MIT licensed. The sample data is CC BY-NC 4.0; see the [dataset card](https://huggingface.co/datasets/KalshiEye/kalshi-order-book-sample). The full archive, recorded since October 12, 2026, is described at [kalshieye.com/data/kalshi](https://kalshieye.com/data/kalshi/?utm_source=github&utm_medium=readme&utm_campaign=kalshieye-examples).
 
 Kalshi Eye is independent and is not affiliated with Kalshi.
